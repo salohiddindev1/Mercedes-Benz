@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercedes-Benz</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./global.css" />
+  </head>
+  <body>  
+    <header>
+      <div class="container">
+        <h1 style="display: flex; justify-content: center; align-items: center; gap: 7px; font-size: 50px">
+          Mercedes-Benz
+          <img style="width: 50px; text-align: center; padding: 13px; height: 50px;"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mercedes-Benz_Star_2022.svg/800px-Mercedes-Benz_Star_2022.svg.png"
+            alt="png"
+          />
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="./models.html">Models</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="hero">
+        <h2>Welcome to Mercedes-Benz</h2>
+        <p>Discover the luxury and performance of our latest models.</p>
+        <button onclick="learnMore()">Learn More</button>
+      </div>
+    </section>
+
+    <section id="models">
+      <div class="container">
+        <h2 class="h3">Our Models</h2>
+        <div class="model-list">
+          <div class="model">
+            <img
+              src="./img/png-clipart-mercedes-benz-cls-class-car-luxury-vehicle-mercedes-car-vehicle-rim-removebg-preview.png"
+              alt="Model 1"
+            />
+            <h3>Model 1</h3>
+            <p>Luxury and performance combined.</p>
+          </div>
+          <div class="model">
+            <img
+              src="./img/png-transparent-car-sport-utility-vehicle-mercedes-benz-e-class-acura-car-compact-car-sedan-sport-removebg-preview.png"
+              alt="Model 2"
+            />
+            <h3>Model 2</h3>
+            <p>Experience the future of driving.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="h2">Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Mercedes-Benz. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
